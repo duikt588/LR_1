@@ -4,7 +4,7 @@ using namespace std;
 int main() {
     double x = 1;   
     double y = 1;
-    bool i;
+    bool i = false;
     
     if (x >= -1 && x <= 0 && y >= 0 && y <= 1) {
         i = true;
@@ -13,9 +13,6 @@ int main() {
         i = true;
     }
   
-    if (i)
-        cout << "true";
-    else
-        cout << "false";
+    cout << boolalpha << i;
     return 0;
 }
