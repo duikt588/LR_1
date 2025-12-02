@@ -2,9 +2,13 @@
 using namespace std;
 
 int main() {
-    double x = 1;   
-    double y = 1;
+    double x;   
+    double y;
     bool i = false;
+    cout << "x: ";
+    cin >> x;
+    cout << "y: ";
+    cin >> y;
     
     if (x >= -1 && x <= 0 && y >= 0 && y <= 1) {
         i = true;
