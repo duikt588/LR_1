@@ -2,7 +2,9 @@
 using namespace std;
 
 int main() {
-    int n = 1;
+    int n;
+    cout << "n:";
+    cin >> n;
 
     switch(n) {
         case 1:
@@ -26,6 +28,8 @@ int main() {
         case 7:
             cout << "F: Dnipro, T: Kharkiv" << endl;
             break;
+        default:
+        cout << "error";
     }
     return 0;
 }
