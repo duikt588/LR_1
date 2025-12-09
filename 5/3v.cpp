@@ -3,16 +3,21 @@
 using namespace std;
 
 int main() {
-   
-    double a = 0;
-    double b = 5;
-    double h = 0.5;
+    double a;
+    double b;
+    double h;
+    cout << ("a:");
+    cin >> a;
+    cout << ("b:");
+    cin >> b;
+    cout << ("h:");
+    cin >> h;
 
     double x = a;
 
     cout << "----------------\n";
-    cout << ":   X   :     Y: \n";
-    cout << "-----------------------\n";
+    cout << "|    X   |     Y|  \n";
+    cout << "------------------\n";
 
     while (x <= b) {
         
@@ -21,9 +26,9 @@ int main() {
         }
 
         double y = sqrt(sin(x)) + x * x;
-        cout << ": " << x << " : " << y << " :\n";
+        cout << "|  " << x << " |  " << y << " | \n";
         x += h;
     }
-    cout << "-----------------------\n";
+    cout << "------------------\n";
     return 0;
 }
