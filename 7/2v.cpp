@@ -12,14 +12,15 @@ int main(void) {
     cin >> n; 
 
     for (long i = 0; i < n; i++) {
-        double denominator = (2. * i) + 1.;
+        double d = (2. * i) + 1.;
         if (i % 2 == 0) {
-            pi4 += (1. / denominator);
+            pi4 += (1. / d);
         } else {
-            pi4 -= (1. / denominator);
+            pi4 -= (1. / d);
         }
     }
 
     cout << "Pi = " << (pi4 * 4.) << endl;  
     return 0; 
 }
+
