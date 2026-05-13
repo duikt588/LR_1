@@ -7,13 +7,13 @@ int main(void) {
     cin >> a;
     try {
         if (b == 0) {
-            throw "Your input is not valid, you can't divide by zero.";
+            throw 0;
         }
         c = a / b;
         cout << c << endl;
     }
-    catch (const char* msg) {
-        cout << msg << endl;
+    catch (...) {
+        cout << "Your input is not valid, you can't divide by zero." << endl;
     }
     return 0; 
 }
