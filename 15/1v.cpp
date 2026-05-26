@@ -8,7 +8,7 @@ bool isLeap(int year) {
     return false;
 }
 int main(void) {
-    for(int yr = 1995; yr < 2017; yr++)
+    for(int year = 1995; year < 2017; year++)
         cout << yr << " -> " << isLeap(yr) << endl;
     return 0;
 }
