@@ -14,9 +14,9 @@ int monthLength(int year, int month) {
 }
 
 int main(void) {
-    for(int yr = 2000; yr < 2002; yr++) {
-        for(int mo = 1; mo <= 12; mo++)
-            cout << monthLength(yr, mo) << " ";
+    for(int year = 2000; year < 2002; year++) {
+        for(int month = 1; month <= 12; month++)
+            cout << monthLength(year, month) << " ";
         cout << endl;
     }
     return 0;
