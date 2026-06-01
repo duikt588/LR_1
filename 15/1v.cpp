@@ -9,6 +9,6 @@ bool isLeap(int year) {
 }
 int main(void) {
     for(int year = 1995; year < 2017; year++)
-        cout << yr << " -> " << isLeap(yr) << endl;
+        cout << year << " -> " << isLeap(year) << endl;
     return 0;
 }
